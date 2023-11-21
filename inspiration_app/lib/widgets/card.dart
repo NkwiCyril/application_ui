@@ -11,25 +11,33 @@ class PromoCard extends StatelessWidget {
       aspectRatio: 2 / 3,
       child: Container(
         decoration: BoxDecoration(
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withOpacity(0.5),
+              spreadRadius: .5,
+              blurRadius: .5,
+              offset: const Offset(0, 1),
+            ),
+          ],
           borderRadius: BorderRadius.circular(20),
           image: DecorationImage(
             fit: BoxFit.cover,
             image: AssetImage(image),
           ),
         ),
-        child: Container(
-          decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(20),
-            gradient: LinearGradient(
-            colors: [
-              Colors.black.withOpacity(.8),
-              Colors.black.withOpacity(0),
-            ],
-            begin: Alignment.bottomRight,
-            stops: const [0.1, 0.9]
-          ),
-          ),
-        ),
+        // child: Container(
+        //   decoration: BoxDecoration(
+        //   borderRadius: BorderRadius.circular(20),
+        //     gradient: LinearGradient(
+        //     colors: [
+        //       Colors.black.withOpacity(.8),
+        //       Colors.black.withOpacity(0),
+        //     ],
+        //     begin: Alignment.bottomRight,
+        //     stops: const [0.1, 0.9]
+        //   ),
+        //   ),
+        // ),
       ),
     );
   }

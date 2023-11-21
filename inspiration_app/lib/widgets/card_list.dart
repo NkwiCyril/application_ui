@@ -10,30 +10,32 @@ class PromoCardList extends StatelessWidget {
       height: 200,
       decoration: const BoxDecoration(),
       child: ListView(
-        scrollDirection: Axis.horizontal,
-        children: const [
-          PromoCard(image: 'assets/images/one.jpg'),
-          SizedBox(
-            width: 8,
+          padding: const EdgeInsets.symmetric(
+            vertical: 1,
           ),
-          PromoCard(image: 'assets/images/two.jpg'),
-          SizedBox(
-            width: 8,
-          ),
-          PromoCard(image: 'assets/images/three.jpg'),
-          SizedBox(
-            width: 8,
-          ),
-          PromoCard(image: 'assets/images/four.jpg'),
-          SizedBox(
-            width: 8,
-          ),
-          PromoCard(image: 'assets/images/five.jpg'),
-          SizedBox(
-            width: 8,
-          ),
-        ]
-      ),
+          scrollDirection: Axis.horizontal,
+          children: const [
+            PromoCard(image: 'assets/images/one.jpg'),
+            SizedBox(
+              width: 8,
+            ),
+            PromoCard(image: 'assets/images/two.jpg'),
+            SizedBox(
+              width: 8,
+            ),
+            PromoCard(image: 'assets/images/three.jpg'),
+            SizedBox(
+              width: 8,
+            ),
+            PromoCard(image: 'assets/images/four.jpg'),
+            SizedBox(
+              width: 8,
+            ),
+            PromoCard(image: 'assets/images/five.jpg'),
+            SizedBox(
+              width: 8,
+            ),
+          ]),
     );
   }
 }
