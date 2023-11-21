@@ -58,16 +58,16 @@ class _HomePageState extends State<HomePage> {
                     decoration: BoxDecoration(
                         color: const Color.fromRGBO(244, 243, 243, 1),
                         borderRadius: BorderRadius.circular(15)),
-                    child: const TextField(
+                    child: TextField(
                       decoration: InputDecoration(
                         border: InputBorder.none,
-                        prefixIcon: Icon(
+                        prefixIcon: const Icon(
                           Icons.search,
                           color: Colors.black87,
                         ),
                         hintText: 'Search here!',
                         hintStyle: TextStyle(
-                          color: Colors.grey,
+                          color: Colors.grey.shade600,
                           fontSize: 15,
                         ),
                       ),
